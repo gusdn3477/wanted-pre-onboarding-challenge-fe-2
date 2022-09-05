@@ -51,6 +51,15 @@ Milk.prototype.isSolid = function () {
 };
 
 /**
+ * @typedef {Object} Point
+ * @property {string} id - The title of the App.
+ * @property {string} contents - The contents of the App.
+ * @property {boolean} completed - The author of the App.
+ * @property {string} category - The category of the App.
+ * @property {string=} tags - The tag of the App.
+ */
+
+/**
  * Represents a TODO App
  * @constructor
  * @param {string} id - The title of the App.
@@ -60,12 +69,21 @@ Milk.prototype.isSolid = function () {
  * @param {string=} tags - The tag of the App.
  */
 
-function TODO(id, contents, completed, category, tags) {}
+function TODO(Point) {}
 
+/**
+ * @return {Point}
+ */
 TODO.prototype.CREATE = function ({ id, contents, category, tags }) {};
 
+/**
+ * @return {Point}
+ */
 TODO.prototype.READ = function ({ id }) {};
 
+/**
+ * @return {Point}
+ */
 TODO.prototype.UPDATE = function ({
   id,
   contents,
@@ -74,4 +92,7 @@ TODO.prototype.UPDATE = function ({
   tags,
 }) {};
 
+/**
+ * @return {Point}
+ */
 TODO.prototype.DELETE = function ({ id, category, tags }) {};
