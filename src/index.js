@@ -57,7 +57,7 @@ Milk.prototype.isSolid = function () {
  * @param {string} contents - The contents of the App.
  * @param {boolean} completed - The author of the App.
  * @param {string} category - The category of the App.
- * @param {string | undefined} tags - The tag of the App.
+ * @param {string=} tags - The tag of the App.
  */
 
 function TODO(id, contents, completed, category, tags) {}
