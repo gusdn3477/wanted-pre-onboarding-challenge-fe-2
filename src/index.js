@@ -61,3 +61,17 @@ Milk.prototype.isSolid = function () {
  */
 
 function TODO(id, contents, completed, category, tags) {}
+
+TODO.prototype.CREATE = function ({ id, contents, category, tags }) {};
+
+TODO.prototype.READ = function ({ id }) {};
+
+TODO.prototype.UPDATE = function ({
+  id,
+  contents,
+  completed,
+  category,
+  tags,
+}) {};
+
+TODO.prototype.DELETE = function ({ id, category, tags }) {};
